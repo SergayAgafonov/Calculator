@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1496A6"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/SummaSum1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TextViewHeight"
+        android:layout_centerVertical="true"
+        android:background="#C1A518"
+        android:gravity="center_vertical"
+        android:text="@string/Sum1TextView"
+        android:textColor="#FFFFFF"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/SummaSum2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TextViewHeight"
+        android:layout_below="@+id/SummaSum1"
+        android:layout_marginTop="15dp"
+        android:background="#C1A518"
+        android:gravity="center_vertical"
+        android:text="@string/Sum2TextView"
+        android:textColor="#FFFFFF"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Sum1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/TextViewHeight"
+        android:layout_alignRight="@+id/SummaSum1"
+        android:layout_centerVertical="true"
+        android:hint="@string/Sum1"
+        android:inputType="numberSigned"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/Sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/TextViewHeight"
+        android:layout_below="@+id/Sum1"
+        android:layout_alignEnd="@+id/SummaSum2"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="-1dp"
+        android:hint="@string/Sum2"
+        android:inputType="numberSigned"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sum2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#BFA318"
+        android:backgroundTint="#F8F8F8"
+        android:onClick="Click"
+        android:text="@string/Click"
+        android:textColor="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        tools:ignore="TextContrastCheck" />
+</RelativeLayout>
